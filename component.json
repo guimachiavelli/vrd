@@ -1,0 +1,11 @@
+{
+  "name": "VRD",
+  "version": "0.1",
+  "dependencies": {
+    "backbone": "latest",
+	"underscore": "latest",
+    "requirejs": "2.1.1",
+    "jquery": "latest",
+    "modernizr": "~2.6.2"
+  }
+}

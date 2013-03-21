@@ -1,0 +1,15 @@
+#news {
+	@include rhythm(8, 0, 0 , 6);
+	height: rhythm(54);
+	position: relative;
+	overflow:hidden;
+		
+	.item {
+		@include rhythm(0, 0, 0 , 6);
+		img {
+			width: 100%;
+		}
+
+	}
+
+}
