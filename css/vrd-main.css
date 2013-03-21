@@ -307,16 +307,27 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\000031}}
+#site-info {
+  border-top: 1px solid #111111;
+  margin-top: 1.42857em;
+  padding-top: 1.42857em;
+  padding-bottom: 0em;
+  margin-bottom: 5.71429em;
+  -webkit-box-sizing: border-sizing;
+  -moz-box-sizing: border-sizing;
+  box-sizing: border-sizing;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\000038}}
 #rights {
   float: left;
   width: 30%;
   margin-right: 15%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\0000314}}
 #colophon {
   float: left;
-  margin-bottom: 2.85714em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_news\.scss}line{font-family:\000031}}
