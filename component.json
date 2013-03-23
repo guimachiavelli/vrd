@@ -3,9 +3,11 @@
   "version": "0.1",
   "dependencies": {
     "backbone": "latest",
-	"underscore": "latest",
+    "underscore": "latest",
     "requirejs": "2.1.1",
     "jquery": "latest",
-    "modernizr": "~2.6.2"
+    "modernizr": "~2.6.2",
+    "jcarousel": "git://github.com/jsor/jcarousel.git#~0.3.0-beta.2",
+    "filementgroup-responsive-carousel": "latest"
   }
 }

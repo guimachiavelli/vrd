@@ -1,6 +1,29 @@
 .js {
 
+	.carousel {
+		height: rhythm(54);
+		overflow:hidden;
 
+		.main-text {
+			
+		}
+
+		.item {
+			width: 68%;
+		}
+	}
+
+	.carousel-list {
+		width: 20000em;
+		position: absolute;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.carousel li {
+		float: left;
+	}
 
 	.carousel-nav {
 		height: 0;
@@ -22,7 +45,7 @@
 
 			&.next {
 				left: auto;
-				right: 0;
+				right: 1px;;
 			}
 
 			&:hover {
