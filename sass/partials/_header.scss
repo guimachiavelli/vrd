@@ -1,13 +1,13 @@
 #coat-of-arms {
 	width: 150px;
-	position: fixed;
+	position: fixed; z-index: 8;
 	top: 50%; margin-top: -94.5px;
 	left: rhythm(2);
 }
 
 #site-name {
 	width: 150px;
-	position: fixed;
+	position: fixed; z-index: 9;
 	top: 50%; margin-top: -46px;
 	right: rhythm(2);
 	@include adjust-font-size-to(28px,3.1,14px);

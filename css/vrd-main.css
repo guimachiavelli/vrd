@@ -204,7 +204,6 @@ q:after {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_general\.scss}line{font-family:\0000368}}
 .module .main-figure {
-  height: 28.57143em;
   overflow: hidden;
   margin-top: 0em;
   padding-top: 0em;
@@ -250,6 +249,7 @@ body {
 #coat-of-arms {
   width: 150px;
   position: fixed;
+  z-index: 8;
   top: 50%;
   margin-top: -94.5px;
   left: 1.42857em;
@@ -259,6 +259,7 @@ body {
 #site-name {
   width: 150px;
   position: fixed;
+  z-index: 9;
   top: 50%;
   margin-top: -46px;
   right: 1.42857em;
@@ -463,8 +464,12 @@ html, #menu {
 .project-mode #menu a {
   color: #fff;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000327}}
+.project-mode #site-name {
+  color: #fff;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000333}}
 #overlay {
   position: fixed;
   z-index: 5;
@@ -479,33 +484,34 @@ html, #menu {
   background: #111111;
   padding-bottom: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000343}}
 #overlay.focus {
   z-index: 11;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000348}}
 #internal-padding {
   margin: 10px 0;
   height: 90%;
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000354}}
 #slideshow {
-  width: 80%;
+  width: 85%;
   height: 100%;
   margin: 5em auto 0 auto;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000361}}
 #slideshow ul, #slideshow li, #slideshow .item {
   height: 100%;
+  background: #111111;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000366}}
 #slideshow .main-figure {
-  height: 80%;
+  height: 75%;
   overflow: hidden;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000371}}
@@ -515,52 +521,160 @@ html, #menu {
   margin: 0 auto;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000378}}
 #slideshow .main-text {
   text-align: center;
   width: 70%;
   padding: 0.71429em 15%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000384}}
 #slideshow .nav-item {
   color: #fff;
   border-color: #fff;
-  left: 10%;
-  bottom: 8%;
+  left: 0;
+  bottom: 18%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000390}}
 #slideshow .nav-item.next {
-  right: 10%;
+  right: 0;
   left: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\000031}}
+.js {
+  	/*.carousel {
+  		height: rhythm(54);
+  		overflow:hidden;
+  
+  		.main-text {
+  			
+  		}
+  
+  		.item {
+  			width: 68%;
+  		}
+  	}
+  
+  	.carousel-list {
+  		width: 20000em;
+  		position: absolute;
+  		list-style: none;
+  		margin: 0;
+  		padding: 0;
+  	}
+  
+  	.carousel li {
+  		float: left;
+  	}
+     */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000329}}
 .js .carousel {
-  height: 38.57143em;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000334}}
+.js .carousel .carousel-item {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000335}}
+.js .carousel .carousel-active {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000339}}
+.js .carousel-slide {
+  position: relative;
   overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000311}}
-.js .carousel .item {
-  width: 68%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000316}}
-.js .carousel-list {
-  width: 20000em;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000348}}
+.js .carousel-slide .carousel-item {
   position: absolute;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  /* necessary for non-active slides */
+  display: block;
+  /* overrides basic carousel styles */
+  z-index: 1;
+  background: #f4f4f4;
+  -webkit-transition-property: left;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000324}}
-.js .carousel li {
-  float: left;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000361}}
+.js .carousel-slide .carousel-active {
+  left: 0;
+  position: relative;
+  z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000367}}
+.js .carousel-no-transition .carousel-item {
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0;
+  -moz-transition-duration: 0;
+  -o-transition-duration: 0;
+  transition-duration: 0;
+  -webkit-transition-timing-function: none;
+  -moz-transition-timing-function: none;
+  -o-transition-timing-function: none;
+  transition-timing-function: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000373}}
+.js .carousel-slide .carousel-in {
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000376}}
+.js .carousel-slide-reverse .carousel-out {
+  left: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000380}}
+.js .carousel-slide .carousel-out,
+.js .carousel-slide-reverse .carousel-in {
+  left: -100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000387}}
+.js .carousel-slide-reverse .carousel-item {
+  -webkit-transition-property: left;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000392}}
+.js .carousel-slide-reverse .carousel-active {
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000399}}
 .js .carousel-nav {
   height: 0;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\00003103}}
 .js .carousel-nav .nav-item {
   text-decoration: none;
   border: 1px solid #111111;
@@ -580,14 +694,14 @@ html, #menu {
   position: absolute;
   z-index: 1;
   left: 0;
-  bottom: 2.14286em;
+  bottom: 5.71429em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\00003117}}
 .js .carousel-nav .nav-item.next {
   left: auto;
   right: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\00003122}}
 .js .carousel-nav .nav-item:hover {
   color: #9d9d9d;
   border-color: #9d9d9d;
