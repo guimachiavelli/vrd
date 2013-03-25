@@ -132,7 +132,7 @@ a {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_general\.scss}line{font-family:\0000312}}
 a:hover {
-  color: #f4f4f4;
+  text-decoration: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_general\.scss}line{font-family:\0000317}}
@@ -309,6 +309,10 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000334}}
 #menu a {
   text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000336}}
+#menu a:hover {
+  border-bottom: 1px solid #111111;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\000031}}
