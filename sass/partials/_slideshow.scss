@@ -1,26 +1,22 @@
-html, #menu {
-	@include transition-property(background-color);
-	@include transition-duration(1s);	
-
-}
-
-
-
 .project-mode {
 	@include smooth;
 	overflow: hidden;
 	max-width: 100%;
 	min-height: 100%;
+// 	@include transition-property(background-color);
+//	@include transition-duration(1s);
+//	@include transition-timing-function(ease-in);
 
 	body {
 		overflow: hidden;
 	}
 	
-	&, #menu {
-		background: $text-color;
+	& {
+		
 	}
 
 	#menu {
+		background: transparent;
 		a { color: #fff; }
 	}
 	
@@ -46,7 +42,7 @@ html, #menu {
 }
 
 #internal-padding {
-	margin: $base-line-height 0;
+	background: $text-color;
 	height: 90%;
 	overflow: hidden;
 }
@@ -65,7 +61,7 @@ html, #menu {
 
 	.main-figure {
 		height: 75%;
-		overflow: hidden;
+		overflow: hidden; 
 	}
 
 	img {

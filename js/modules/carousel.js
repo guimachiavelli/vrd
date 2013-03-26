@@ -1,4 +1,4 @@
-define(['jquery', 'carousel2'], function() {
+define(['jquery', 'carousel'], function() {
 	$('#news .carousel').carousel();
 
 

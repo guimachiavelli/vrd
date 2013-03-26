@@ -13,8 +13,7 @@ require.config({
 		'libs/backbone/backbone-min'
 	],
 	//plugins
-	'carousel': 'libs/jcarousel/dist/jquery.jcarousel.min',
-	'carousel2': 'libs/filementgroup-responsive-carousel/dist/responsive-carousel',
+	'carousel': 'libs/filementgroup-responsive-carousel/dist/responsive-carousel',
 	
   }
 });

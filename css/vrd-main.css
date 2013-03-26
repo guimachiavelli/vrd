@@ -249,7 +249,7 @@ body {
 #coat-of-arms {
   width: 150px;
   position: fixed;
-  z-index: 8;
+  z-index: 1;
   top: 50%;
   margin-top: -94.5px;
   left: 1.42857em;
@@ -271,15 +271,27 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\000031}}
 #menu {
   position: fixed;
-  z-index: 6;
   top: 0;
   left: 0;
+  z-index: 6;
   width: 100%;
   height: 4.28571em;
   padding-top: 0;
   background: #f4f4f4;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000313}}
 #menu ul {
   overflow: hidden;
   *zoom: 1;
@@ -291,26 +303,26 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000322}}
 #menu li {
   width: 20%;
   float: left;
   text-align: center;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000328}}
 #menu li:first-child {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000332}}
 #menu li:last-child {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000337}}
 #menu a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000339}}
 #menu a:hover {
   border-bottom: 1px solid #111111;
 }
@@ -438,42 +450,30 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\000031}}
-html, #menu {
-  -webkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\000039}}
 .project-mode {
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
   max-width: 100%;
   min-height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000310}}
 .project-mode body {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000319}}
-.project-mode, .project-mode #menu {
-  background: #111111;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000318}}
+.project-mode #menu {
+  background: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000320}}
 .project-mode #menu a {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000323}}
 .project-mode #site-name {
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000329}}
 #overlay {
   position: fixed;
   z-index: 5;
@@ -488,19 +488,19 @@ html, #menu {
   background: #111111;
   padding-bottom: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000339}}
 #overlay.focus {
   z-index: 11;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000344}}
 #internal-padding {
-  margin: 10px 0;
+  background: #111111;
   height: 90%;
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000350}}
 #slideshow {
   width: 85%;
   height: 100%;
@@ -508,37 +508,37 @@ html, #menu {
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000357}}
 #slideshow ul, #slideshow li, #slideshow .item {
   height: 100%;
   background: #111111;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000362}}
 #slideshow .main-figure {
   height: 75%;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000367}}
 #slideshow img {
   width: 120%;
   display: block;
   margin: 0 auto;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000374}}
 #slideshow .main-text {
   text-align: center;
   width: 70%;
   padding: 0.71429em 15%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000380}}
 #slideshow .nav-item {
   color: #fff;
   border-color: #fff;
   left: 0;
   bottom: 18%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000386}}
 #slideshow .nav-item.next {
   right: 0;
   left: auto;
