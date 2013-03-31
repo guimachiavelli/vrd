@@ -11,10 +11,8 @@ define(['jquery','underscore','carousel'], function() {
 			}
 
 			$('html').addClass('project-mode').children('body').append('<div id="overlay"><div id="internal-padding"><div id="slideshow"></div></div></div>');
-	//		$('#overlay').hide().fadeIn(800);
 			$('#slideshow').append(project);
 			$('#internal-padding').children('#slideshow').prepend(this.close_button);
-//			$('#coat-of-arms').attr('src', 'imgs/coat-of-arms-white.png');
 			this.close();
 		},
 
@@ -22,7 +20,6 @@ define(['jquery','underscore','carousel'], function() {
 			$('.close-map.with-overlay').click(function(){
 				$(this).parent().fadeOut();
 				$(this).parents('#overlay').remove();
-//				$('#coat-of-arms').attr('src', 'imgs/coat-of-arms.png');
 				$('html').removeClass('project-mode');
 
 				return false;
@@ -32,7 +29,6 @@ define(['jquery','underscore','carousel'], function() {
 				if (e.keyCode == 27) {
 					$('#slideshow').fadeOut();
 					$('#overlay').remove();
-//					$('#coat-of-arms').attr('src', 'imgs/coat-of-arms.png');
 					$('html').removeClass('project-mode');
 				}
 			});
@@ -59,7 +55,6 @@ define(['jquery','underscore','carousel'], function() {
 						'		<article class="item">' +
 						'			<figure class="main-figure">' +
 						'				<img src="<%= info.image %>" alt="<%= info.description %>">' +
-//							'<% console.log(info)%>' +
 						'			</figure>' +
 						'			<p class="main-text"><%= info.description %></p>' +
 						'		</article>' +
@@ -68,10 +63,6 @@ define(['jquery','underscore','carousel'], function() {
 						'</ul>';
 
 	project_info = _.template(project_info, data);
-	
-//	var list = "<% _.each(project_item, function(image) { %> <li><%= image %></li> <% }); %>";
-//	console.log(_.template(list, data));
-
 	
 	$('.project a').click(function(){
 		vrdSlideshow.load(project_info);
@@ -82,5 +73,3 @@ define(['jquery','underscore','carousel'], function() {
 
 
 });
-
-
