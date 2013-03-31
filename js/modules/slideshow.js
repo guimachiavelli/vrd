@@ -11,7 +11,7 @@ define(['jquery','underscore','carousel'], function() {
 			}
 
 			$('html').addClass('project-mode').children('body').append('<div id="overlay"><div id="internal-padding"><div id="slideshow"></div></div></div>');
-			$('#overlay').hide().fadeIn(800);
+	//		$('#overlay').hide().fadeIn(800);
 			$('#slideshow').append(project);
 			$('#internal-padding').children('#slideshow').prepend(this.close_button);
 //			$('#coat-of-arms').attr('src', 'imgs/coat-of-arms-white.png');
@@ -21,7 +21,7 @@ define(['jquery','underscore','carousel'], function() {
 		close: function() {
 			$('.close-map.with-overlay').click(function(){
 				$(this).parent().fadeOut();
-				$(this).parents('#overlay').fadeOut(800, function() { this.remove(); });
+				$(this).parents('#overlay').remove();
 //				$('#coat-of-arms').attr('src', 'imgs/coat-of-arms.png');
 				$('html').removeClass('project-mode');
 
@@ -31,8 +31,8 @@ define(['jquery','underscore','carousel'], function() {
 			$(document).keyup(function(e) {
 				if (e.keyCode == 27) {
 					$('#slideshow').fadeOut();
-					$('#overlay').fadeOut(800, function() { this.remove(); });
-					$('#coat-of-arms').attr('src', 'imgs/coat-of-arms.png');
+					$('#overlay').remove();
+//					$('#coat-of-arms').attr('src', 'imgs/coat-of-arms.png');
 					$('html').removeClass('project-mode');
 				}
 			});

@@ -6,9 +6,6 @@
 	height: rhythm(6);
 	padding-top: 0;
 	background: $main-color;
-	@include transition-property(background-color);
-	@include transition-duration(0.8s);
-	@include transition-timing-function(ease-in);
 
 	ul {
 		@include clearfix;

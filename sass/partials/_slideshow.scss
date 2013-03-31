@@ -3,18 +3,11 @@
 	overflow: hidden;
 	max-width: 100%;
 	min-height: 100%;
-// 	@include transition-property(background-color);
-//	@include transition-duration(1s);
-//	@include transition-timing-function(ease-in);
 
 	body {
 		overflow: hidden;
 	}
 	
-	& {
-		
-	}
-
 	#menu {
 		background: transparent;
 		a { color: #fff; }
