@@ -195,7 +195,7 @@ q:after {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 4.28571em;
+  margin-bottom: 4.71429em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_general\.scss}line{font-family:\0000363}}
 .module .main-text {
@@ -208,16 +208,16 @@ q:after {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.57143em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_general\.scss}line{font-family:\0000376}}
 .title {
   text-transform: uppercase;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.57143em;
   vertical-align: bottom;
   font-size: 1em;
-  line-height: 1.42857em;
+  line-height: 1.57143em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000361}}
@@ -228,7 +228,7 @@ q:after {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/\.rvm\/gems\/ruby-1\.9\.3-p327\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000364}}
 html {
   font-size: 14px;
-  line-height: 0.71429em;
+  line-height: 0.78571em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/vrd-main\.scss}line{font-family:\0000311}}
@@ -238,11 +238,12 @@ html {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/vrd-main\.scss}line{font-family:\0000315}}
 body {
-  line-height: 1.42857em;
+  line-height: 1.57143em;
   font-family: "Karla", "Akkurat", "Helvetica Neue", "Arial", sans-serif;
   width: 60%;
   padding: 0 5%;
   margin: 0 auto;
+  letter-spacing: .5px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_header\.scss}line{font-family:\000031}}
@@ -252,7 +253,7 @@ body {
   z-index: 1;
   top: 50%;
   margin-top: -94.5px;
-  left: 1.42857em;
+  left: 1.57143em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_header\.scss}line{font-family:\000038}}
@@ -262,9 +263,9 @@ body {
   z-index: 9;
   top: 50%;
   margin-top: -46px;
-  right: 1.42857em;
+  right: 1.57143em;
   font-size: 2em;
-  line-height: 1.10714em;
+  line-height: 1.21786em;
   text-transform: uppercase;
 }
 
@@ -275,54 +276,42 @@ body {
   left: 0;
   z-index: 6;
   width: 100%;
-  height: 4.28571em;
+  height: 4.71429em;
   padding-top: 0;
   background: #f4f4f4;
-  -webkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  transition-duration: 0.8s;
-  -webkit-transition-timing-function: ease-in;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000310}}
 #menu ul {
   overflow: hidden;
   *zoom: 1;
   width: 60%;
   margin: 0 auto;
-  padding: 1.42857em 0;
+  padding: 1.57143em 0;
   border-bottom: 1px solid #111111;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000319}}
 #menu li {
   width: 20%;
   float: left;
   text-align: center;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000325}}
 #menu li:first-child {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000329}}
 #menu li:last-child {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000334}}
 #menu a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000336}}
 #menu a:hover {
   border-bottom: 1px solid #111111;
 }
@@ -330,10 +319,10 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\000031}}
 #site-info {
   border-top: 1px solid #111111;
-  margin-top: 1.42857em;
-  padding-top: 1.42857em;
+  margin-top: 1.57143em;
+  padding-top: 1.57143em;
   padding-bottom: 0em;
-  margin-bottom: 5.71429em;
+  margin-bottom: 6.28571em;
   -webkit-box-sizing: border-sizing;
   -moz-box-sizing: border-sizing;
   box-sizing: border-sizing;
@@ -353,10 +342,10 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_news\.scss}line{font-family:\000031}}
 #news {
-  margin-top: 5.71429em;
+  margin-top: 6.28571em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 4.28571em;
+  margin-bottom: 4.71429em;
   position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_news\.scss}line{font-family:\000035}}
@@ -364,7 +353,7 @@ body {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 4.28571em;
+  margin-bottom: 4.71429em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_news\.scss}line{font-family:\000038}}
 #news .item img {
@@ -383,7 +372,7 @@ body {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 1.42857em;
+  margin-bottom: 1.57143em;
   float: left;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_projects\.scss}line{font-family:\0000310}}
@@ -425,7 +414,7 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_contact\.scss}line{font-family:\000032}}
 #contact #contact-info {
-  margin-top: 1.42857em;
+  margin-top: 1.57143em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
@@ -446,7 +435,7 @@ body {
 #contact #address {
   float: left;
   margin-right: 20%;
-  padding-bottom: 1.42857em;
+  padding-bottom: 1.57143em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\000031}}
@@ -456,24 +445,24 @@ body {
   max-width: 100%;
   min-height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\000037}}
 .project-mode body {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000311}}
 .project-mode #menu {
   background: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000313}}
 .project-mode #menu a {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000316}}
 .project-mode #site-name {
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000322}}
 #overlay {
   position: fixed;
   z-index: 5;
@@ -488,57 +477,57 @@ body {
   background: #111111;
   padding-bottom: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000332}}
 #overlay.focus {
   z-index: 11;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000337}}
 #internal-padding {
   background: #111111;
   height: 90%;
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000343}}
 #slideshow {
   width: 85%;
   height: 100%;
-  margin: 5em auto 0 auto;
+  margin: 5.5em auto 0 auto;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000350}}
 #slideshow ul, #slideshow li, #slideshow .item {
   height: 100%;
   background: #111111;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000355}}
 #slideshow .main-figure {
   height: 75%;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000360}}
 #slideshow img {
   width: 120%;
   display: block;
   margin: 0 auto;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000367}}
 #slideshow .main-text {
   text-align: center;
   width: 70%;
-  padding: 0.71429em 15%;
+  padding: 0.78571em 15%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000373}}
 #slideshow .nav-item {
   color: #fff;
   border-color: #fff;
   left: 0;
   bottom: 18%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000379}}
 #slideshow .nav-item.next {
   right: 0;
   left: auto;
@@ -698,7 +687,7 @@ body {
   position: absolute;
   z-index: 1;
   left: 0;
-  bottom: 5.71429em;
+  bottom: 6.28571em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_js\.scss}line{font-family:\00003117}}
 .js .carousel-nav .nav-item.next {
