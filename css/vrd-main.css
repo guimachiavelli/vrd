@@ -519,15 +519,16 @@ body {
   text-align: center;
   width: 70%;
   padding: 0.78571em 15%;
+  text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000374}}
 #slideshow .nav-item {
   color: #fff;
   border-color: #fff;
   left: 0;
   bottom: 18%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000380}}
 #slideshow .nav-item.next {
   right: 0;
   left: auto;
