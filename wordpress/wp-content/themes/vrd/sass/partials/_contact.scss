@@ -1,0 +1,20 @@
+#contact {
+	#contact-info {
+		@include rhythm(2, 0, 0, 0)
+	}
+
+	dt, dd {
+		display: inline;
+		@include overflow-control;
+	}
+
+	dd:after{
+		content: '';
+		display: block;
+	}
+	#address {
+		float: left;
+		margin-right: 20%;
+		padding-bottom: rhythm(2);
+	}
+}

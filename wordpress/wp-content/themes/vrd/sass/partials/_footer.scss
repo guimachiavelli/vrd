@@ -1,0 +1,16 @@
+#site-info {
+	border-top: 1px solid $text-color;
+	@include rhythm(2, 2, 0, 8);
+	@include box-sizing(border-sizing);
+}
+
+
+#rights {
+	float: left;
+	width: 30%;
+	margin-right: 15%
+}
+
+#colophon {
+	float: left;
+}

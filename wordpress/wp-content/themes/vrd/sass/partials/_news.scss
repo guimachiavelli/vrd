@@ -1,0 +1,19 @@
+#news {
+	@include rhythm(8, 0, 0 , 6);
+	position: relative;
+		
+	.item {
+		@include rhythm(0, 0, 0 , 6);
+		
+		.main-figure {
+			max-height: 463px;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+	}
+
+}

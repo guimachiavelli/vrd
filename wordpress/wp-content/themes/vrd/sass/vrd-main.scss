@@ -1,0 +1,45 @@
+@import 'compass';
+@import 'susy';
+@import 'partials/reset';
+@import 'partials/grid';
+@import 'partials/colors';
+@import 'partials/mixins';
+@import 'partials/general';
+
+@include establish-baseline;
+
+html {
+	background: $main-color;
+}
+
+body {
+	@include adjust-leading-to(2);
+	font-family: $the-font;
+	width: 60%;
+	padding: 0 5%;
+	margin: 0 auto;
+	letter-spacing: .5px;
+
+
+
+	//@include baseline-grid-background(rhythm(1));
+	//@include susy-grid-background;
+}
+
+
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/footer';
+
+
+@import 'partials/news';
+@import 'partials/projects';
+@import 'partials/contact';
+
+
+@import 'partials/slideshow';
+
+
+@import 'partials/js';
+@import 'partials/ie8';
+@import 'partials/small-screens';
