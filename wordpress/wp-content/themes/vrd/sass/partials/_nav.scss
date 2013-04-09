@@ -8,27 +8,30 @@
 	background: $main-color;
 
 	ul {
-		@include clearfix;
+		height: rhythm(6);
 		width: 60%;
 		margin: 0 auto;
 		padding: rhythm(2) 0;
 		border-bottom: 1px solid $text-color;
 		@include box-sizing(border-box);
+		position: relative;
 	}
 
 	li {
 		width: 20%;
-		float: left;
+//		float: left;
 		text-align: center;
 		text-transform: uppercase;
+		position: absolute;
 		
-		&:first-child {
-			text-align: left;
-		}
+		&.news { left: 0; text-align: left; }
+		&.projects { left: 15% }
+		&.process { left: 40% }
+		&.about { left: 65% }
+		&.contact { right: 0; text-align: right; }
 
-		&:last-child {
-			text-align: right;
-		}
+
+
 	}
 
 	a {

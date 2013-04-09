@@ -3,7 +3,7 @@
 
 	.project {
 		width: 30%;
-		margin-right: 5%;
+		margin-right: rhythm(2.5);
 		@include rhythm(0, 0, 0, 2);
 		float: left;
 

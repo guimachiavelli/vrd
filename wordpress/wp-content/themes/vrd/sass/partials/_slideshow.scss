@@ -3,6 +3,7 @@
 	overflow: hidden;
 	max-width: 100%;
 	min-height: 100%;
+	background: $text-color;
 
 	body {
 		overflow: hidden;
@@ -57,12 +58,12 @@
 	ul {
 		height: auto;
 		max-height: 100%;
-		padding-bottom: 20px
+		padding-bottom: 30px
 	}
 
 	.main-figure {
 		height: 75%;
-		overflow: hidden; 
+		overflow: hidden;
 	}
 
 
@@ -89,8 +90,10 @@
 	.main-text {
 		text-align: center;
 		width: 70%;
-		padding: rhythm() 15%;
+		padding: rhythm(1.5) 15%;
 		text-transform: uppercase;
+		position: relative;
+		top: 6px;
 	}
 	
 	.nav-item {

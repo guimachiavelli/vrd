@@ -8,6 +8,7 @@ define(['jquery','underscore','carousel'], function() {
 		regular_coat: '',
 
 		load: function(project) {
+			var _this = this;
 			this.regular_coat = $('#coat-of-arms').attr('src');
 			this.negative_coat = $('#coat-of-arms').data('negative');
 
@@ -15,10 +16,14 @@ define(['jquery','underscore','carousel'], function() {
 				$('#slideshow').remove();
 			}
 
-			$('html').addClass('project-mode').children('body').append('<div id="overlay"><div id="internal-padding"><div id="slideshow"></div></div></div>');
+			$('html').addClass('project-mode').children('body').append('<div id="overlay"><div id="internal-padding"></div></div>').hide().fadeIn('slow', function() { 
+			$('#internal-padding').append('<div id="slideshow"></div>').hide().fadeIn('slow');
 			$('#slideshow').append(project);
-			$('#coat-of-arms').attr('src', this.negative_coat);
-
+			$('#coat-of-arms').attr('src', _this.negative_coat);
+	
+			
+			});
+		
 
 			$('#internal-padding').children('#slideshow').prepend(this.close_button);
 			this.closeTrigger();

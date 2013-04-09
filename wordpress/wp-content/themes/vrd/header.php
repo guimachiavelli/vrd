@@ -26,10 +26,10 @@
 
 		<nav id="menu">
 			<ul>
-				<li><a href="#news">Nieuws</a></li>
-				<li><a href="#projects">Projecten</a></li>
-				<li><a href="#process">Ons Process</a></li>
-				<li><a href="#about">Wie Zijn Wij?</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li class="news"><a href="#news">Nieuws</a></li>
+				<li class="projects"><a href="#projects">Projecten</a></li>
+				<li class="process"><a href="#process">Ons Process</a></li>
+				<li class="about"><a href="#about">Wie Zijn Wij?</a></li>
+				<li class="contact"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>

@@ -282,8 +282,7 @@ body {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000310}}
 #menu ul {
-  overflow: hidden;
-  *zoom: 1;
+  height: 4.71429em;
   width: 60%;
   margin: 0 auto;
   padding: 1.57143em 0;
@@ -291,27 +290,42 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000320}}
 #menu li {
   width: 20%;
-  float: left;
   text-align: center;
   text-transform: uppercase;
+  position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000325}}
-#menu li:first-child {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000327}}
+#menu li.news {
+  left: 0;
   text-align: left;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000328}}
+#menu li.projects {
+  left: 15%;
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000329}}
-#menu li:last-child {
+#menu li.process {
+  left: 40%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000330}}
+#menu li.about {
+  left: 65%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000331}}
+#menu li.contact {
+  right: 0;
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000337}}
 #menu a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_nav\.scss}line{font-family:\0000339}}
 #menu a:hover {
   border-bottom: 1px solid #111111;
 }
@@ -330,14 +344,8 @@ body {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\000038}}
 #rights {
-  float: left;
   width: 30%;
-  margin-right: 15%;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_footer\.scss}line{font-family:\0000314}}
-#colophon {
-  float: left;
+  margin-bottom: 0.78571em;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_news\.scss}line{font-family:\000031}}
@@ -373,7 +381,7 @@ body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_projects\.scss}line{font-family:\000034}}
 #projects .project {
   width: 30%;
-  margin-right: 5%;
+  margin-right: 1.96429em;
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
@@ -450,25 +458,26 @@ body {
   overflow: hidden;
   max-width: 100%;
   min-height: 100%;
+  background: #111111;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\000037}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\000038}}
 .project-mode body {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000312}}
 .project-mode #menu {
   background: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000314}}
 .project-mode #menu a {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000317}}
 .project-mode #site-name {
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000323}}
 #overlay {
   position: fixed;
   z-index: 5;
@@ -483,18 +492,18 @@ body {
   background: #111111;
   padding-bottom: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000333}}
 #overlay.focus {
   z-index: 11;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000338}}
 #internal-padding {
   background: #111111;
   height: 90%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000344}}
 #slideshow {
   width: 85%;
   height: 100%;
@@ -503,24 +512,24 @@ body {
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000352}}
 #slideshow ul, #slideshow li, #slideshow .item {
   height: auto;
   max-height: 70%;
   background: #111111;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000358}}
 #slideshow ul {
   height: auto;
   max-height: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000364}}
 #slideshow .main-figure {
   height: 75%;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000372}}
 #slideshow .main-figure.vertical img {
   width: auto;
   max-height: 65%;
@@ -528,33 +537,35 @@ body {
   float: none;
   max-width: 30%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000383}}
 #slideshow img {
   width: auto;
   max-height: 95%;
   display: block;
   margin: 0 auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000390}}
 #slideshow .main-text {
   text-align: center;
   width: 70%;
-  padding: 0.78571em 15%;
+  padding: 1.17857em 15%;
   text-transform: uppercase;
+  position: relative;
+  top: 6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\0000399}}
 #slideshow .nav-item {
   color: #fff;
   border-color: #fff;
   left: 0;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\00003105}}
 #slideshow .nav-item.next {
   right: 0;
   left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/gui\/projects\/vrd\/wordpress\/wp-content\/themes\/vrd\/sass\/partials\/_slideshow\.scss}line{font-family:\00003111}}
 #slideshow .slide-counter {
   position: absolute;
   top: 0;
