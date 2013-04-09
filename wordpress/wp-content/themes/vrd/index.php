@@ -8,6 +8,4 @@
 
         <?php include 'modules/contact.php'; ?>
 
-
-	
 <?php get_footer(); ?>

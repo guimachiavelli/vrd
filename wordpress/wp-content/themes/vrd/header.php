@@ -21,7 +21,7 @@
 	<body>
 		<header id="intro" role="banner">
 			<h1 id="site-name">Van Rietschoten Design</h1>
-			<img id="coat-of-arms" src="<?php echo TEMPLATE_URL; ?>/imgs/coat-of-arms.png" alt="">
+			<img id="coat-of-arms" data-negative="<?php echo TEMPLATE_URL; ?>/imgs/coat-of-arms-white.png" src="<?php echo TEMPLATE_URL; ?>/imgs/coat-of-arms.png" alt="">
 		</header>
 
 		<nav id="menu">

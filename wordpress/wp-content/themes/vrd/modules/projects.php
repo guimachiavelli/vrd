@@ -20,7 +20,7 @@
 				<li class="project">
 					<a href="#<?php the_ID(); ?>">
 						<figure class="project-head">
-							<?php echo get_the_post_thumbnail($id, 'large', array('class' => 'project-thumb')); ?>
+							<?php the_post_thumbnail('thumbnail', array('class' => 'project-thumb')); ?>
 							<figcaption class="project-title">
 								<?php the_title(); ?>
 							</figcaption>

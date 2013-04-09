@@ -22,7 +22,8 @@
 						<figure class="main-figure">
 							<?php the_post_thumbnail('large'); ?>
 						</figure>
-						<p class="main-text">van Rietschoten design heeft net een nieuwe showroom voor Oxener opgeleverd. Klassieke materialen wisselen elkaar af met verrassende hangende volumes.</p>
+
+						<div class="main-text"><?php the_excerpt(); ?></div>
 					</article>
 				</li>
 				<?php } ?>

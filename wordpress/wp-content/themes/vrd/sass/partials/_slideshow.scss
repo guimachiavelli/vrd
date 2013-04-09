@@ -37,19 +37,27 @@
 #internal-padding {
 	background: $text-color;
 	height: 90%;
-	overflow: hidden;
+//	overflow: hidden;
 }
 
 #slideshow {
 	width: 85%;
 	height: 100%;
+	max-height: 80%;
 	margin: rhythm(7) auto 0 auto;
 	color: #fff;
 	@include smooth;
 	
 	ul, li, .item {
-		height: 100%;
+		height: auto;
+		max-height: 70%;
 		background: $text-color;
+	}
+
+	ul {
+		height: auto;
+		max-height: 100%;
+		padding-bottom: 20px
 	}
 
 	.main-figure {
@@ -57,11 +65,25 @@
 		overflow: hidden; 
 	}
 
+
+	.main-figure {
+		
+		&.vertical img {
+			width: auto;
+			max-height: 65%;
+			margin: 0 auto;
+			float: none;
+			max-width: 30%;
+		}
+
+	}
+
+
 	img {
-		width: 120%;
+		width: auto;
+		max-height: 95%;
 		display: block;
 		margin: 0 auto;
-		float: left;
 	}
 	
 	.main-text {
@@ -75,12 +97,18 @@
 		color: #fff;
 		border-color: #fff;
 		left: 0;
-		bottom: 18%;
+		bottom: 0;
 
 		&.next {
 			right: 0;
 			left: auto;
 		}
+	}
+
+	.slide-counter {
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 
 

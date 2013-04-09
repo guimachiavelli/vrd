@@ -1,5 +1,167 @@
-/* Small Desktops and laptops ----------- */
-@media (max-width : 960px) {
+/* tablets  ----------- */
+@media (min-width: 550px) and (max-width: 900px) {
+	body {
+		width: 70%;
+	}
+
+	#coat-of-arms {
+		width: 120px;
+		margin-top: -60px;
+	}
+
+	#site-name {
+		@include adjust-font-size-to(24px,2.5);
+		margin-top: -27px;
+
+	}
+
+	#menu {
+		ul {
+			width: 70%;
+		}
+	}
 	
+}
+
+
+/* phones  ----------- */
+@media (max-width: 500px) {
+
+	body {
+		width: 70%;
+	}
+
+	#menu {
+		position: static;
+		background: transparent;
+		ul {
+			width: 100%;
+		}
+
+		li {
+			float: none;
+			width: auto;
+
+			&:first-child, &:last-child {
+				text-align: center;
+			}
+		}
+
+	}
+
+	#coat-of-arms {
+		width: 90px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -45px;
+		margin-top: rhythm(3);
+	}
+
+	#site-name {
+		width: 100%;
+		position: static;
+		text-align: center;
+		margin-top: rhythm(7);
+	}
+	
+	#contact, #process {
+		.main-text {
+			width: 100%;
+		}
+	}
+
+	#projects {
+		.project {
+			width: 100%;
+		}
+	}
+	
+	#rights, #colophon {
+		width: 100%;
+		float: none;
+		margin-bottom: rhythm(2);
+	}
+
+
+	#internal-padding {
+		height: 100%;
+	}
+
+	#slideshow {
+		margin: 0 auto;
+		
+		.main-text {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		.main-figure {
+			
+			&.vertical img {
+//				width: 80%;
+				max-height: 80%;
+			}
+
+			&.horizontal {
+				line-height: 550px;
+				vertical-align: middle;
+
+				img {
+					display: inline;
+
+				}
+			}
+
+
+		}
+
+		img {
+			float: none;
+
+		}
+
+		.nav-item {
+			bottom: 14%;
+		}
+	
+	}
+
+	@media (orientation: landscape) {
+		
+	#slideshow {
+		
+		
+		.main-text {
+
+		}
+
+		.main-figure {
+			
+			&.vertical img {
+				width: auto;
+				max-height: 90%;
+			}
+
+			&.horizontal {
+				line-height: 1;
+				vertical-align: middle;
+				text-align: center;
+
+				img {
+					max-width: 100%;
+					width: auto;
+					height: 80%;
+					
+
+				}
+			}
+
+
+		}
+	}
+
+
+	}
 
 }
