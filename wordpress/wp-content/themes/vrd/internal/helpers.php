@@ -64,7 +64,7 @@
 
 	function print_page_content($the_page_name) {
     	$the_page = get_page_by_path($the_page_name); 
-		$the_page_content = $the_page->post_content;
+		$the_page_content = apply_filters('the_content', $the_page->post_content);
 		return $the_page_content;
 	}
 

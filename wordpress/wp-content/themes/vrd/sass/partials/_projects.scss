@@ -3,8 +3,10 @@
 
 	.project {
 		width: 30%;
-		margin-right: rhythm(2.5);
-		@include rhythm(0, 0, 0, 2);
+//		margin-right: rhythm(2.5);
+//		@include rhythm(0, 0, 0, 2);
+		margin-right: 5%;
+		margin-bottom: 4%;
 		float: left;
 
 		&:nth-child(3n) {
@@ -20,8 +22,6 @@
 
 	.project-head {
 		position: relative;
-//		max-height: 144px;
-//		overflow: hidden;
 		
 		&:hover {
 			.project-title {
@@ -31,17 +31,31 @@
 	}
 
 	.project-title {
+		position: absolute;
+		text-align: center;
+		z-index: 1;
+		top: 0;
+		display: none;
 		width: 100%;
 		height: 100%;
 		background: #fff;
-		text-transform: uppercase;
-		text-align: center;
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		padding-top: 28%;
-		@include box-sizing(border-box);
-		display: none;
+		vertical-align: middle;
+
+		p {
+			text-transform: uppercase;
+			display: inline-block;
+			vertical-align: middle;
+			width: 95%;
+		}
+
+		&:before {
+		  content: '';
+		  display: inline-block;
+		  height: 100%;
+		  vertical-align: middle;
+		  margin-right: -0.25em;
+		}
+
 
 		&:hover {
 			color: $text-color;

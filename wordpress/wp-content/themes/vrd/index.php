@@ -6,6 +6,8 @@
 
         <?php include 'modules/process.php'; ?>
 
+        <?php include 'modules/who.php'; ?>
+
         <?php include 'modules/contact.php'; ?>
 
 <?php get_footer(); ?>

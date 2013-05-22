@@ -34,17 +34,26 @@
 	#menu {
 		position: static;
 		background: transparent;
+		height: rhythm(10);
+
 		ul {
 			width: 100%;
+			height: rhythm(14);
 		}
 
 		li {
 			float: none;
 			width: auto;
+			position: static;
 
 			&:first-child, &:last-child {
 				text-align: center;
 			}
+		}
+
+		.close {
+			position: fixed;
+			z-index: 10;
 		}
 
 	}
@@ -65,7 +74,7 @@
 		margin-top: rhythm(7);
 	}
 	
-	#contact, #process {
+	#contact, #process, #who {
 		.main-text {
 			width: 100%;
 		}
@@ -89,7 +98,7 @@
 	}
 
 	#slideshow {
-		margin: 0 auto;
+		margin: rhythm(5) auto 0 auto;
 		
 		.main-text {
 			width: 60%;
@@ -97,28 +106,18 @@
 		}
 
 		.main-figure {
-			
-			&.vertical img {
-//				width: 80%;
-				max-height: 80%;
+			img {
+				height: 70% !important;
+				width: auto !important;
 			}
 
 			&.horizontal {
-				line-height: 550px;
-				vertical-align: middle;
-
 				img {
-					display: inline;
-
+					height: auto !important;
+					width: 100% !important;
+					
 				}
 			}
-
-
-		}
-
-		img {
-			float: none;
-
 		}
 
 		.nav-item {

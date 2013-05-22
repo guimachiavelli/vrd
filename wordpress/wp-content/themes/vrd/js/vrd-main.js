@@ -9,14 +9,10 @@ require.config({
     'underscore': [
 		'libs/underscore/underscore-min'
 	],
-    'backbone': [
-		'libs/backbone/backbone-min'
-	],
 	//plugins
 	'carousel': 'libs/filementgroup-responsive-carousel/dist/responsive-carousel',
-	
+	'fitvids': 'libs/fitvid'
   }
 });
 
-require(['libs/modernizr']);
-require(['modules/carousel', 'modules/slideshow', 'modules/nav']);
+require(['modules/carousel', 'modules/slideshow', 'modules/nav', 'modules/video']);

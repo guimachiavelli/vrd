@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/vrd-main.css">
 	
+		<script src="<?php echo TEMPLATE_URL; ?>/js/libs/modernizr.js"></script>
 		<script data-main="<?php echo TEMPLATE_URL; ?>/js/vrd-main" src="<?php echo TEMPLATE_URL; ?>/js/libs/require.js"></script>
 
         <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -29,7 +30,7 @@
 				<li class="news"><a href="#news">Nieuws</a></li>
 				<li class="projects"><a href="#projects">Projecten</a></li>
 				<li class="process"><a href="#process">Ons Process</a></li>
-				<li class="about"><a href="#about">Wie Zijn Wij?</a></li>
+				<li class="about"><a href="#who">Wie Zijn Wij?</a></li>
 				<li class="contact"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>

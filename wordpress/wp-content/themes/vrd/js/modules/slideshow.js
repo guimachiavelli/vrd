@@ -3,7 +3,7 @@ define(['jquery','underscore','carousel'], function() {
 
 	vrdSlideshow = {
 
-		close_button: '<a class="close with-overlay" href="#">╳</a>',
+		close_button: '<a class="close with-overlay" href="#">✕</a>',
 		negative_coat: '', 
 		regular_coat: '',
 
@@ -16,24 +16,36 @@ define(['jquery','underscore','carousel'], function() {
 				$('#slideshow').remove();
 			}
 
-			$('html').addClass('project-mode').children('body').append('<div id="overlay"><div id="internal-padding"></div></div>').hide().fadeIn('slow', function() { 
-			$('#internal-padding').append('<div id="slideshow"></div>').hide().fadeIn('slow');
-			$('#slideshow').append(project);
-			$('#coat-of-arms').attr('src', _this.negative_coat);
-	
-			
+			$('html').addClass('project-enter').children('body').append('<div id="overlay"><div id="internal-padding"></div></div>').hide().fadeIn(200, function() { 
+				$('html').addClass('project-mode').removeClass('project-enter');
+				$('#internal-padding').append('<div id="slideshow"></div>');
+				$('#slideshow').hide();
+				$('#coat-of-arms').attr('src', _this.negative_coat);
+				$('#slideshow').append(project)
+				$('#slideshow .carousel').carousel();
+				$('#slideshow').fadeIn(500);
+				$('#menu').prepend(_this.close_button);
+				_this.closeTrigger();
+				_this.resizeSlide();
 			});
 		
 
-			$('#internal-padding').children('#slideshow').prepend(this.close_button);
-			this.closeTrigger();
 		},
 
 		close: function() {
-			$('#slideshow').fadeOut();
-			$('#overlay').remove();
-			$('html').removeClass('project-mode');
-			$('#coat-of-arms').attr('src', this.regular_coat);
+			var _this = this;
+			$('html').addClass('project-exit');
+			$('#internal-padding, #menu').hide();
+			$('#overlay').fadeOut(200, function() { 
+				$(this).remove();
+				$('.close.with-overlay').remove();
+				$('html').removeClass('project-mode');
+				$('html').removeClass('project-exit');
+				$('#coat-of-arms').attr('src', _this.regular_coat);
+				$('#menu').fadeIn(100);
+
+
+			});
 
 			return false;
 		},
@@ -62,6 +74,15 @@ define(['jquery','underscore','carousel'], function() {
 					_this.close();
 				}
 			});
+		},
+
+		resizeSlide: function() {
+			image_width = $('#slideshow').width();
+			image_height = $('#slideshow').height() - 50;
+			
+			console.log(image_height);
+
+			$('#slideshow .main-figure img').height(image_height);
 		}
 
 	};
@@ -82,8 +103,7 @@ define(['jquery','underscore','carousel'], function() {
 							'			<figure class="main-figure <% if (info.images.full.width > info.images.full.height) { %> <%= "horizontal" %> <% } else { %> <%= "vertical" %> <% } %>">' +
 							'				<img src="<%= info.images.full.url %>" alt="<%= info.title %>">' +
 							'			</figure>' +
-							'			<p class="main-text"><%= info.title %></p>' +
-							' 			<div class="slide-counter"><%= i %>/<%= imgs.image_list.length %></div>' +
+							'			<p class="main-text"><%= i %>/<%= imgs.image_list.length %>&nbsp; &nbsp; <%= info.title %></p>' +
 							'		</article>' +
 							' 	<% i++; console.log(info) %>' +
 							'	</li>' +
@@ -99,11 +119,14 @@ define(['jquery','underscore','carousel'], function() {
 				slideshow = _.template(project_info);
 
 				vrdSlideshow.load(slideshow({'image_list' : data.post.attachments}));
-				$('#slideshow .carousel').carousel();
 
 			}
-		)
+		);
+		
 
+		$(window).resize(function() {
+			vrdSlideshow.resizeSlide();
+		});
 
 		return false;
 	});

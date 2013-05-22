@@ -13,8 +13,11 @@
 		display: block;
 	}
 	#address {
-		float: left;
+		float: right;
 		margin-right: 20%;
 		padding-bottom: rhythm(2);
+		a {
+			text-decoration: none;
+		}
 	}
 }

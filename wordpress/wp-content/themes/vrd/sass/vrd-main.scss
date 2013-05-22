@@ -10,6 +10,8 @@
 
 html {
 	background: $main-color;
+	@include transition-property('background-color');
+	@include transition-duration(.2s);
 }
 
 body {

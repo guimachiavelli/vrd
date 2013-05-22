@@ -22,7 +22,7 @@
 						<figure class="project-head">
 							<?php the_post_thumbnail('thumbnail', array('class' => 'project-thumb')); ?>
 							<figcaption class="project-title">
-								<?php the_title(); ?>
+								<p><?php the_title(); ?></p>
 							</figcaption>
 						</figure>
 					</a>

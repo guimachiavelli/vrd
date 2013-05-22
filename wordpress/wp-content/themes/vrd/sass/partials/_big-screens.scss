@@ -1,0 +1,17 @@
+@media (min-width: 550px) and (max-width: 900px) {
+	#slideshow {	
+		.main-figure {
+			
+			&.vertical img {
+				width: 30%;
+				//max-height: 65%;
+				margin: 0 auto;
+				float: none;
+		//		max-width: 100%;
+			}
+
+		}
+	}
+
+
+}

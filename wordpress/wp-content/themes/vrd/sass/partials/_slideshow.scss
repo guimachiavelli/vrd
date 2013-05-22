@@ -1,3 +1,17 @@
+.project-enter {
+	&, #menu { background: $text-color; }
+
+	#menu { z-index: -1 }
+
+}
+
+.project-exit {
+	.module, #menu {
+		visibility: hidden;
+		z-index: -1;
+	}
+}
+
 .project-mode {
 	@include smooth;
 	overflow: hidden;
@@ -9,8 +23,13 @@
 		overflow: hidden;
 	}
 	
+	.module {
+		visibility: hidden;
+	}
+
 	#menu {
 		background: transparent;
+		border: 0;
 		a { color: #fff; }
 	}
 	
@@ -18,6 +37,10 @@
 		color: #fff;
 	}
 	
+}
+
+#menu.black {
+
 }
 
 #overlay {
@@ -29,6 +52,9 @@
 	min-height: 100%;
 	background: $text-color;
 	padding-bottom: 16px;
+	@include transition-property('background-color');
+	@include transition-duration(.2s);
+
 
 	&.focus {
 		z-index: 11
@@ -45,7 +71,7 @@
 	width: 85%;
 	height: 100%;
 	max-height: 80%;
-	margin: rhythm(7) auto 0 auto;
+	margin: rhythm(9) auto 0 auto;
 	color: #fff;
 	@include smooth;
 	
@@ -63,7 +89,6 @@
 
 	.main-figure {
 		height: 75%;
-		overflow: hidden;
 	}
 
 
@@ -71,10 +96,9 @@
 		
 		&.vertical img {
 			width: auto;
-			max-height: 65%;
+			height: 95%;
 			margin: 0 auto;
 			float: none;
-			max-width: 30%;
 		}
 
 	}
@@ -82,7 +106,8 @@
 
 	img {
 		width: auto;
-		max-height: 95%;
+//		height: 35%;
+//		max-width: 75%;
 		display: block;
 		margin: 0 auto;
 	}
@@ -100,7 +125,7 @@
 		color: #fff;
 		border-color: #fff;
 		left: 0;
-		bottom: 0;
+		bottom: 30px;
 
 		&.next {
 			right: 0;

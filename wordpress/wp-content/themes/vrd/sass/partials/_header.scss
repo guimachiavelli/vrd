@@ -7,7 +7,7 @@
 
 #site-name {
 	width: 150px;
-	position: fixed; z-index: 9;
+	position: fixed; z-index: 100;
 	top: 50%; margin-top: -46px;
 	right: rhythm(2);
 	@include adjust-font-size-to(28px,3.1,14px);
